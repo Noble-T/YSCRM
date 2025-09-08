@@ -186,7 +186,7 @@ not_in_second = df1[~df1.index.isin(same_index)]
 not_in_first = df2[~df2.index.isin(same_index)]
 
 # 合并结果，并标记出两个CSV中都存在但内容不同的数据
-differences = not_in_first[not_in_first.apply(lambda x: any(x != y for y in not_in_second.values), axis=1))]
+differences = not_in_first[not_in_first.apply(lambda x: any(x != y for y in not_in_second.values), axis=1)]
 differences = differences.append(not_in_second[not_in_second.apply(lambda x: any(x != y for y in differences.values), axis=1)])
 differences.reset_index(drop=True, inplace=True)
 
