@@ -1,0 +1,33 @@
+[2025-06-12 10:40:03,003] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2025-06-12 10:40:09,813] [database.py] [line:80] [INFO] # 退款订单id列表：['20250611144916409052']
+[2025-06-12 10:40:09,813] [database.py] [line:85] [INFO] # 
+退款订单号：20250611144916409052
+[2025-06-12 10:40:09,832] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-06-12 10:40:09,870] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49297, '20250611144916409052', 10100, 1, 1, 0, 0, None, '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 1, 0, None, None, None, None, 0, datetime.datetime(2025, 6, 11, 14, 49, 16), datetime.datetime(2025, 6, 11, 14, 49, 16)),)
+
+[2025-06-12 10:40:09,892] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-06-12 10:40:09,924] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49455, '20250611144916409052', 1, 0, 2, 0, None, 3, 0, 888996, 888996, 'wwec9bda2817108582', '百灵智投', 'LiYongLei', 'LiYongLei', 1, 1, 0, '研选量投', 1, 'yxlt', '这是研选量投的描述', 1, 3, 0, '', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 1, 1, None, 0, 7, '', '', 0, datetime.datetime(2025, 6, 11, 14, 49, 16), None, None, 0, '888996', None, None, None, '889009', None, None, None, '889003,889013,889017', None, None, None),)
+
+[2025-06-12 10:40:09,944] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-06-12 10:40:09,968] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-06-12 10:40:09,987] [database.py] [line:144] [INFO] # 风险测评id：41444
+[2025-06-12 10:40:10,384] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-06-12 10:40:10,416] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+((1072, '20250611144916409052', 3338203510512787459, '', '研选量投', '10100', '研选量投', '2980', '0.01', 1, None, 'R2', 0, 0, None, 0, '', None, '', 0, None, None, datetime.datetime(2025, 6, 11, 14, 49, 16), datetime.datetime(2025, 6, 11, 14, 50, 33), 0, None, '', '', 'YSTG10H25061100003', 0, None, 0, 0, '', '', 1, '', 0),)
+
+[2025-06-12 10:40:10,417] [database.py] [line:260] [INFO] # app用户id：3338203510512787459
+
+[2025-06-12 10:40:10,463] [database.py] [line:288] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-06-12 10:40:10,529] [database.py] [line:309] [INFO] # o1ELc6LrAZOqCjYiOZur5A-sVzYc用户到期时间：None

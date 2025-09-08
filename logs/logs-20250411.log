@@ -1,0 +1,39 @@
+[2025-04-11 10:54:17,711] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2025-04-11 10:54:20,207] [database.py] [line:80] [INFO] # 退款订单id列表：['20250411091009541276']
+[2025-04-11 10:54:20,207] [database.py] [line:85] [INFO] # 
+退款订单号：20250411091009541276
+[2025-04-11 10:54:20,226] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：20250409091953162375,20250410203955631035
+[2025-04-11 10:54:20,264] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((48970, '20250411091009541276', 10122, 10, 10, 1, 3, '1744335130', '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', datetime.datetime(2025, 4, 1, 10, 39, 11), datetime.datetime(2025, 4, 2, 10, 39, 11), 1, 2, datetime.datetime(2025, 4, 4, 10, 39, 11), None, None, None, 0, datetime.datetime(2025, 4, 11, 9, 10, 9), datetime.datetime(2025, 4, 11, 9, 10, 9)),)
+
+[2025-04-11 10:54:20,285] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-04-11 10:54:20,317] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49127, '20250411091009541276', 1, 1, 2, 1, datetime.datetime(2025, 4, 11, 10, 39, 11), 3, 0, 889003, 889003, 'wwec9bda2817108582', '百灵智投', 'WangSong', 'WangSong', 1, 2, 1, '私人定制', 11800000, 'srdz', '这是私人定制的描述', 1, 4, 0, '20250409091953162375', '20250409091953162375,20250410203955631035', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 10, 10, '1744335130', 1, 7, '', '8b1b9cffbe3731569c127523b57e52ff', 0, datetime.datetime(2025, 4, 11, 9, 10, 9), None, datetime.datetime(2025, 4, 11, 10, 39, 11), 0, '888996', None, None, None, '889009', None, None, None, '889003,889013,889017', None, None, None),)
+
+[2025-04-11 10:54:20,337] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+((802, '20250411091009541276', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 1, 101371, '', 1, 0, 1, None, None, 1, None, None, None, None, -1, '', 0, datetime.datetime(2025, 4, 11, 9, 11, 33), datetime.datetime(2025, 4, 11, 10, 39, 11)),)
+
+[2025-04-11 10:54:20,357] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+((43953, '20250411091009541276', 'd2b1ec2df34a4a43ad418629c4472e71', '37c857ff72f84da9bf94bea3611a75ef', 'd28a3fcb2e7c461cb483222be426f433', 1, '产品服务协议', 'eeZRyEm7vbDA0Lxi1n6NDNDfMbS3FBKFV1I5u28WftFIskiH4SusbdejbsUQMFXYeTZ7DiuHw1rW1tpTMNNi9jktKAnWGi1dlZVHCnkly3TKc@@@@lCM6kGFw==', '5VFbtjRSP9eHX@@@@3H$$$$LTFZHMFWXdll9IAoUrn7BPXz2yXtq3TplNQwvXJ@@@@yh5@@@@XRKsF5R58jYF0zSk4TgP44@@@@wuGsquLUDGcB7Rn6ux68ISiTrLsa7YUbZw==', datetime.datetime(2025, 4, 11, 10, 39, 11), '2025-04-11 09:11:28', 'YSTG10A25041100001', None, 'eqoh5xxl$$$$ZHJkZo7HfytjEyYA801VLRe$$$$pS78cSF3nsGRbaNikpsiSE1WU2duLjukCxhu6DZB852D2oIq8h6Tjgfi3ceE1Syv50MnBlmatXAKeUirii3i$$$$tVfGj2T0WoXDDix47TcowNW1Zd59ToaPXD3r69j7AYsP8qFtsHIDi5qVn14z3VgcAL$$$$tubvjpyWSjyKotZtA4L3dphwNqvHHk2ew4rh8Na1tbaUzDTYvY5LSgJ1hotXZWVRwp5Jct0d@@@@NrlySjKXplUsGwiHEE2wvd2mHA2q8ceTZ7DiuHw1rW1tpTMNNi9jktKAnWGi1dlZVHCnkly3RVciKiMhbRwQ==', datetime.datetime(2025, 4, 11, 9, 11, 33), datetime.datetime(2025, 4, 11, 9, 11, 33)),)
+
+[2025-04-11 10:54:20,376] [database.py] [line:144] [INFO] # 风险测评id：41217
+[2025-04-11 10:54:20,693] [database.py] [line:214] [INFO] # order_ids:('20250409091953162375', '20250410203955631035')
+[2025-04-11 10:54:20,712] [database.py] [line:217] [INFO] # 更新v2_work_crm_order_main_status表is_cancellation成功！
+[2025-04-11 10:54:20,858] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+((219099, '20250411091009541276', 3338203510512787459, 'YSTG10A25041100001', 0, 'service', 0, datetime.date(2025, 4, 11), '37c857ff72f84da9bf94bea3611a75ef', 'd2b1ec2df34a4a43ad418629c4472e71', 'AAAAAAq8uroAAAAAAAfmpYQtxadnoyO5eMOCbL+EjGbutT7cb7N5CwVgdbM428SSIkMeN59iEwgOvnZ/+2uydZWQj8Am/1CzXHZKwwjVtVu9JLXe+HP7t7Y3pVnfxeVhllJTHty3sSQEJu1fHppVfKKGJz1mSGesnEqo73L5Lg0+9BTZscoqp0mZwBz7GXRBL3gLN+Nlvexv2rwsEM7o2MiKS6RpNzdhpDAOllEK1kMrBZR8bwqEg6NznyTq+bl0QuAlFSbE+dIe6M6TJomzSyrJ35O3Z1va343uUQsCE50A7hhg1oG2rngBcXqBjyOHLVfTDN5K+8lWkli9R7k91dS+p6MdjlXi7aI+39l2MIlc8zlzWD3/u2WFL6Ga1Lr0JvhSWNPUVTVjcnjyVOlZ0vJyr7YUaciVZDVsyopEul7ku14yLsfMYfKqzNS48F0Qt0GBn7vUwgL4twPj9y7TBksBLd+aLJv6+dtLcYFLHVyeoVWPVhtP5TAq2Woawe+WdE/cmCHtithuQ2SPVyWo86mV7247K4jsl4eSc+ua+eCf3vGwKTJp2NzOr/sx75sPLE4wDiKNquUXfRDkGzo93MayWJbsT2MM6MiPUF8lIVZKfPDok4S5u2Z82CWqyhbGrTC0NFqcStb+1O+Z+B+1SRyZuOSJ0i+rUhjazjE=', 'AAAAAAq8uroAAAAAAAfmphVrvbFP9+IaVf0YN9Sf92cyW6AktxoNBdZC73UWWgMRlqrAC1W8r12Fz1PySmJrNacm8L+j0pWK7HpMAIMTNTH5aTs0xEzACPLb1x8RyxHPWJQLD3tzvte7PzpurdGqkgTfnTQ=', datetime.datetime(2025, 4, 11, 9, 11, 28), datetime.datetime(2025, 4, 11, 9, 10, 27), datetime.datetime(2025, 4, 11, 10, 39, 12), 0, '', 2, ''),)
+
+[2025-04-11 10:54:20,858] [database.py] [line:245] [INFO] # app `stock-rubik-cube`.contract_new数据：
+(219099, '20250411091009541276', 3338203510512787459, 'YSTG10A25041100001', 0, 'service', 0, datetime.date(2025, 4, 11), '37c857ff72f84da9bf94bea3611a75ef', 'd2b1ec2df34a4a43ad418629c4472e71', 'AAAAAAq8uroAAAAAAAfmpYQtxadnoyO5eMOCbL+EjGbutT7cb7N5CwVgdbM428SSIkMeN59iEwgOvnZ/+2uydZWQj8Am/1CzXHZKwwjVtVu9JLXe+HP7t7Y3pVnfxeVhllJTHty3sSQEJu1fHppVfKKGJz1mSGesnEqo73L5Lg0+9BTZscoqp0mZwBz7GXRBL3gLN+Nlvexv2rwsEM7o2MiKS6RpNzdhpDAOllEK1kMrBZR8bwqEg6NznyTq+bl0QuAlFSbE+dIe6M6TJomzSyrJ35O3Z1va343uUQsCE50A7hhg1oG2rngBcXqBjyOHLVfTDN5K+8lWkli9R7k91dS+p6MdjlXi7aI+39l2MIlc8zlzWD3/u2WFL6Ga1Lr0JvhSWNPUVTVjcnjyVOlZ0vJyr7YUaciVZDVsyopEul7ku14yLsfMYfKqzNS48F0Qt0GBn7vUwgL4twPj9y7TBksBLd+aLJv6+dtLcYFLHVyeoVWPVhtP5TAq2Woawe+WdE/cmCHtithuQ2SPVyWo86mV7247K4jsl4eSc+ua+eCf3vGwKTJp2NzOr/sx75sPLE4wDiKNquUXfRDkGzo93MayWJbsT2MM6MiPUF8lIVZKfPDok4S5u2Z82CWqyhbGrTC0NFqcStb+1O+Z+B+1SRyZuOSJ0i+rUhjazjE=', 'AAAAAAq8uroAAAAAAAfmphVrvbFP9+IaVf0YN9Sf92cyW6AktxoNBdZC73UWWgMRlqrAC1W8r12Fz1PySmJrNacm8L+j0pWK7HpMAIMTNTH5aTs0xEzACPLb1x8RyxHPWJQLD3tzvte7PzpurdGqkgTfnTQ=', datetime.datetime(2025, 4, 11, 9, 11, 28), datetime.datetime(2025, 4, 11, 9, 10, 27), datetime.datetime(2025, 4, 11, 10, 39, 12), 0, '', 2, '')
+
+[2025-04-11 10:54:20,883] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+((773, '20250411091009541276', 3338203510512787459, '20250409091953162375', '私人定制', '10122', '私人定制', '118000', '0.17', 1, datetime.datetime(2025, 4, 11, 9, 32, 10), 'R3', 6, 0, datetime.datetime(2025, 4, 11, 10, 39, 12), 0, '', None, '', 0, datetime.datetime(2025, 4, 11, 0, 0), datetime.datetime(2025, 4, 14, 23, 59, 59), datetime.datetime(2025, 4, 11, 9, 10, 9), datetime.datetime(2025, 4, 11, 10, 39, 37), 1, None, '王松', '', 'YSTG10H25041100001', 2, datetime.datetime(2025, 4, 12, 23, 59, 59), 0, 0, '', '0.1', 1, '', 0),)
+
+[2025-04-11 10:54:20,883] [database.py] [line:260] [INFO] # app用户id：3338203510512787459
+
+[2025-04-11 10:54:21,190] [database.py] [line:288] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+((56728, 3338203510512787459, '20250411091009541276', '4', datetime.datetime(2025, 4, 11, 0, 0), datetime.datetime(2025, 4, 14, 23, 59, 59), 0, datetime.datetime(2025, 4, 11, 10, 39, 37), datetime.datetime(2025, 4, 11, 10, 39, 37)),)
+
+[2025-04-11 10:54:21,256] [database.py] [line:309] [INFO] # o1ELc6LrAZOqCjYiOZur5A-sVzYc用户到期时间：(datetime.datetime(2025, 4, 13, 20, 33, 38),)
+[2025-04-11 10:54:21,276] [database.py] [line:323] [INFO] # 更新work_crm_base_user表u_expire_date成功！

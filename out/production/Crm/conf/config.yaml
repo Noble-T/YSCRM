@@ -1,0 +1,28 @@
+unionid: oAESl0QRB8mndRVJFs69e5o8JZi0
+#unionid: oAESl0aF5qnVf6e1G7I15_QKaf8U
+order_id: '20241205163526062525'
+product: 趋势智投-铂金版
+refund_contract: 服务终止协议-测试
+
+mysql:
+  host: ysjumpserver.abctougu.com
+  port: 33061
+  user: 3501abdb-61f3-49ae-8d8e-f6662bd0d700
+  password: l0KJRd3JmF1Rjvb0
+  database: crm.abctougu.cn
+
+  user_app: 45cac3f9-5353-4c8a-9179-0354b0693b6e
+  password_app: meDbA3OIodmkoUQn
+  database_app: stock-rubik-cube
+crm:
+  #  url: https://crm.abctougu.cn
+  url: https://pay.oneil88.com/admin
+  username: mysql
+  password: dev_test@jishubu
+  cookie:
+    name: jmftou
+    value: 3336e664b39602f170db2797776c35bb
+  name: 赵楠
+  mobile: 13325171563
+  url_archives: 
+    https://pay.oneil88.com/admin#/crm_v2/hegui.compliance/archives_detail.html?id=14&spm=m-204-243-245

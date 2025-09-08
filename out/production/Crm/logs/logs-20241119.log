@@ -1,0 +1,32 @@
+[2024-11-19 10:53:24,200] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2024-11-19 10:53:36,339] [database.py] [line:75] [INFO] # 退款订单id列表：['20241119105153755887']
+[2024-11-19 10:53:36,339] [database.py] [line:80] [INFO] # 
+退款订单号：20241119105153755887
+[2024-11-19 10:53:36,358] [database.py] [line:92] [INFO] # 退款订单unionid：oAESl0QRB8mndRVJFs69e5o8JZi0，kill_order：
+[2024-11-19 10:53:36,390] [database.py] [line:102] [INFO] # v2_work_crm_order_main 数据列表：
+((48823, '20241119105153755887', 10130, 7, 7, 0, 0, None, '', 'oAESl0QRB8mndRVJFs69e5o8JZi0', None, 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 1, 0, None, None, None, None, 0, datetime.datetime(2024, 11, 19, 10, 51, 53), datetime.datetime(2024, 11, 19, 10, 51, 53)),)
+
+[2024-11-19 10:53:36,416] [database.py] [line:109] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2024-11-19 10:53:36,449] [database.py] [line:116] [INFO] # v2_work_crm_order_main_status 数据列表：
+((48980, '20241119105153755887', 0, 0, 2, 0, None, 3, 0, 888906, 888906, 'ww559fe0cfbd65d9b8', '水相知天下', 'WangSong', 'WangSong', 1, 2, 0, '趋势智投-钻石版', 7, 'qszt-2', '这是趋势智投-钻石版的描述', 1, 7, 0, '20241118145258888917', '', 0, 0, 'oAESl0QRB8mndRVJFs69e5o8JZi0', 7, 7, None, 0, 7, '', '', 0, datetime.datetime(2024, 11, 19, 10, 51, 53), None, None, 0, '888889', '888912', '888913', '888914', '888910', '888915', '888916', '888917', '101766,888906,888907', ',888918', ',888919', ',888920'),)
+
+[2024-11-19 10:53:36,468] [database.py] [line:122] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2024-11-19 10:53:36,488] [database.py] [line:128] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2024-11-19 10:53:36,894] [database.py] [line:231] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2024-11-19 10:53:36,937] [database.py] [line:242] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+((628, '20241119105153755887', 3338203510512787459, '20241118145258888917', '趋势智投-钻石版', '10130', '趋势智投-钻石版', '29800', '0.07', 1, None, 'R3', 0, 0, None, 0, '', None, '', 0, None, None, datetime.datetime(2024, 11, 19, 10, 51, 53), datetime.datetime(2024, 11, 19, 10, 51, 57), 0, None, '', '', 'YSTG10H24111900002', 0, None, 0, 0, '', '', 1, '', 0),)
+
+[2024-11-19 10:53:36,937] [database.py] [line:250] [INFO] # app用户id：3338203510512787459
+
+[2024-11-19 10:53:37,210] [database.py] [line:278] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2024-11-19 10:53:37,263] [database.py] [line:302] [INFO] # 更新work_crm_base_user表u_expire_date成功！

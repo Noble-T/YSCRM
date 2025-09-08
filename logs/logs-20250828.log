@@ -1,0 +1,60 @@
+[2025-08-28 13:33:45,892] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2025-08-28 13:33:45,977] [database.py] [line:343] [ERROR] # 数据库操作时发生错误: (1045, 'can not get backend info,POST http://jumpserver-jms-core:8080/api/v1/authentication/super-connection-token/secret/ failed, get code: 403, {"detail":"连接令牌过期: 2025-08-27 17:10:00.424277+08:00","code":"permission_denied"} ')
+[2025-08-28 13:33:45,978] [database.py] [line:344] [ERROR] # Error occurred: (1045, 'can not get backend info,POST http://jumpserver-jms-core:8080/api/v1/authentication/super-connection-token/secret/ failed, get code: 403, {"detail":"连接令牌过期: 2025-08-27 17:10:00.424277+08:00","code":"permission_denied"} ')
+Traceback (most recent call last):
+  File "D:\WorkSpaces\CRM\db\database.py", line 38, in database
+    db = pymysql.connect(host=config_data['mysql']['host'], port=config_data['mysql']['port'], user=config_data['mysql']['user_sim'],
+  File "D:\WorkSpaces\CRM\venv\lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+  File "D:\WorkSpaces\CRM\venv\lib\site-packages\pymysql\connections.py", line 664, in connect
+    self._request_authentication()
+  File "D:\WorkSpaces\CRM\venv\lib\site-packages\pymysql\connections.py", line 954, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\WorkSpaces\CRM\venv\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "D:\WorkSpaces\CRM\venv\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\WorkSpaces\CRM\venv\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, 'can not get backend info,POST http://jumpserver-jms-core:8080/api/v1/authentication/super-connection-token/secret/ failed, get code: 403, {"detail":"连接令牌过期: 2025-08-27 17:10:00.424277+08:00","code":"permission_denied"} ')
+[2025-08-28 13:34:28,763] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2025-08-28 13:34:30,928] [database.py] [line:80] [INFO] # 退款订单id列表：['20250828103717410869']
+[2025-08-28 13:34:30,928] [database.py] [line:85] [INFO] # 
+退款订单号：20250828103717410869
+[2025-08-28 13:34:30,949] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-08-28 13:34:30,985] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49500, '20250828103717410869', 10174, 5000000, 5000000, 1, 3, '1756348869', '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', datetime.datetime(2025, 8, 28, 10, 42, 10), datetime.datetime(2026, 2, 27, 10, 42, 10), 183, 0, datetime.datetime(2026, 2, 27, 10, 42, 10), None, None, None, 0, datetime.datetime(2025, 8, 28, 10, 37, 17), datetime.datetime(2025, 8, 28, 10, 37, 17)),)
+
+[2025-08-28 13:34:31,006] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-08-28 13:34:31,042] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49659, '20250828103717410869', 1, 1, 2, 1, datetime.datetime(2025, 8, 28, 10, 42, 10), 1, 4, 889017, 889017, 'wwec9bda2817108582', '百灵智投', 'ZhaoNan', 'ZhaoNan', 1, 2, 1, '趋势智投', 3, 'qszt-4-2', '这是趋势智投-四合一的描述', 183, 11, 0, '20250828100859157849', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 5000000, 5000000, '1756348869', 1, 0, '', '', 0, datetime.datetime(2025, 8, 28, 10, 37, 17), None, datetime.datetime(2025, 8, 28, 10, 42, 10), 0, '888996', None, None, None, '889009', None, None, None, '889003,889013,889017,889089', None, None, None),)
+
+[2025-08-28 13:34:31,064] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+((1182, '20250828103717410869', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 1, 101371, '', 1, 0, 1, None, None, 1, None, None, None, None, -1, 0, '', 1, datetime.datetime(2025, 8, 28, 10, 38, 30), datetime.datetime(2025, 8, 28, 10, 42, 10)),)
+
+[2025-08-28 13:34:31,085] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+((44522, '20250828103717410869', '0c33a855b0c247069319f0d186a146b9', '7cecf41e869b4bf68e86e9436b22e720', '8c4a35b69d4d4dcdbe2885e0d279fdd8', 1, '产品服务协议', 'eeZRyEm7vbDA0Lxi1n6NDNDfMbS3FBKFV1I5u28WftFIskiH4SusbdejbsUQMFXYeTZ7DiuHw1pb57PDeYBRJKNbJDbrUpMUlZVHCnkly3TKc@@@@lCM6kGFw==', '5VFbtjRSP9eHX@@@@3H$$$$LTFZHMFWXdll9IAoUrn7BPXz2yXtq3TplNQwvXJ@@@@yh5@@@@XRKsF5R58jYF0zSk4TgP44@@@@wi5XPpzedM@@@@X7Rn6ux68ISiTrLsa7YUbZw==', datetime.datetime(2025, 8, 28, 10, 42, 10), '2025-08-28 10:38:24', 'YSTG10A25082800002', None, 'eqoh5xxl$$$$ZHJkZo7HfytjEyYA801VLRe$$$$pS78cSF3nsGRbaNikpsiSE1WU2duLjukCxhu6DZB852D2oIq8h6Tjgfi3ceE1SycP2y4K26ThLyfVzzlCog5$$$$tVfGj2T0WoXDDix47TcowNW1Zd59ToaPXD3r69j7AYsP8qFtsHIDi5qVn14z3VgcAL$$$$tubvjpyWSjyKotZtA4L3dphwNqvHHk2ew4rh8NaW$$$$ezw3mAUSSjWyQ261KTFJWVRwp5Jct0d@@@@NrlySjKXplUsGwiHEE2wvd2mHA2q8ceTZ7DiuHw1pb57PDeYBRJKNbJDbrUpMUlZVHCnkly3RVciKiMhbRwQ==', 0, '', datetime.datetime(2025, 8, 28, 10, 38, 30), datetime.datetime(2025, 8, 28, 10, 38, 30)), (44523, '20250828103717410869', None, None, 'dc588181a755439aace7955f2b6da66b', 2, '终止协议-测试', None, '5VFbtjRSP9eHX@@@@3H$$$$LTFZHMFWXdll9IAoUrn7BPXz2yXtq3TplNQwvXJ@@@@yh5@@@@XRKtdxtggvPysrlhLihRAZK11sfQUJJ$$$$q9n', datetime.datetime(2025, 8, 28, 13, 32, 53), '2025-08-28 13:32:53', 'c', None, None, 0, '', datetime.datetime(2025, 8, 28, 13, 32, 31), datetime.datetime(2025, 8, 28, 13, 32, 31)))
+
+[2025-08-28 13:34:31,107] [database.py] [line:144] [INFO] # 风险测评id：41630
+[2025-08-28 13:34:31,148] [database.py] [line:157] [INFO] # 退款id：1313
+[2025-08-28 13:34:31,539] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+((219694, '20250828103717410869', 3338203510512787459, 'YSTG10A25082800002', 0, 'service', 0, datetime.date(2025, 8, 28), '7cecf41e869b4bf68e86e9436b22e720', '0c33a855b0c247069319f0d186a146b9', 'AAAAAAq8uroAAAAAAAgru6Fl+hhRYce2zFhdrvdPScQM5DiaH1qRwp2x6wJSc0ONI95YRg2Abbq/VZCWuGcK28KkjzT35mxwoxzxxCOHX/36I2bziG6WquccZcgIl/kI2SLbqSw31fkr93tvVPaBvFYfoZ+FTR8hW5jBZvv05s8bGDSTI8LNG3yZG+LdREUPvuDiZ3v1FmB7ZlXApRSp+TjfE1ABfo8hzm2pw2iFkOen1BXjElvm7vlnn9vE9f4S5bAdeo6b5pmkvdP909Zv8ElNF0gAtW5ccUcm4BPX1cJpXsAqUP21EH2IGmXeSIOC58UPfcoj+RfU8gdJYpsHxkS5o59ZNn3GEbAHGOdWE3pmHNRpThoJtvDtbSWA5Av7VhehAB9aZHFe2Ek8K0bxTXOd2aHRqKpAUmFDfUYwgYSs9RxksobdTl2Cq0PIdVScNW27CdPvzdf9Sbh4QwjKOvTOI9qcIxrAmer37M4wST28vEVK+sXCP9ZCfoYnSdoxxOVmB7k8lWpiveHfGyqUdltLY9dL0mc/oAIyIsP3hsI4zPyeDkFEpdhAgZgIBNQRKVL8DMYQ9mTl4wmceywWPGe3MDCgx9yPv9W7/PAH7JhTun/zGBTtikTLr0W6+3IQbzelYso+EhcVg9UMYp8AMrD/f7XzmzY=', 'AAAAAAq8uroAAAAAAAgrvJr1JwYIbVHpEzU/Z4DYrqmKQgwFjBpF5HmgZF1RlzLBSHC7PldC+ZAz0hL9DyiWSktJQxjMh61TrXUGdokjqfm6twwPhBH+sXOWqJPqID/BrHZeXDABJGB8i7NCnV/QZF0rk/U=', datetime.datetime(2025, 8, 28, 10, 38, 24), datetime.datetime(2025, 8, 28, 10, 37, 31), datetime.datetime(2025, 8, 28, 10, 42, 11), 0, '', 2, ''), (219695, '20250828103717410869', 3338203510512787459, '', 1, 'termination', 0, None, '', '', '', '', None, datetime.datetime(2025, 8, 28, 13, 32, 31), datetime.datetime(2025, 8, 28, 13, 32, 31), 0, '', 2, ''))
+
+[2025-08-28 13:34:31,539] [database.py] [line:245] [INFO] # app `stock-rubik-cube`.contract_new数据：
+(219694, '20250828103717410869', 3338203510512787459, 'YSTG10A25082800002', 0, 'service', 0, datetime.date(2025, 8, 28), '7cecf41e869b4bf68e86e9436b22e720', '0c33a855b0c247069319f0d186a146b9', 'AAAAAAq8uroAAAAAAAgru6Fl+hhRYce2zFhdrvdPScQM5DiaH1qRwp2x6wJSc0ONI95YRg2Abbq/VZCWuGcK28KkjzT35mxwoxzxxCOHX/36I2bziG6WquccZcgIl/kI2SLbqSw31fkr93tvVPaBvFYfoZ+FTR8hW5jBZvv05s8bGDSTI8LNG3yZG+LdREUPvuDiZ3v1FmB7ZlXApRSp+TjfE1ABfo8hzm2pw2iFkOen1BXjElvm7vlnn9vE9f4S5bAdeo6b5pmkvdP909Zv8ElNF0gAtW5ccUcm4BPX1cJpXsAqUP21EH2IGmXeSIOC58UPfcoj+RfU8gdJYpsHxkS5o59ZNn3GEbAHGOdWE3pmHNRpThoJtvDtbSWA5Av7VhehAB9aZHFe2Ek8K0bxTXOd2aHRqKpAUmFDfUYwgYSs9RxksobdTl2Cq0PIdVScNW27CdPvzdf9Sbh4QwjKOvTOI9qcIxrAmer37M4wST28vEVK+sXCP9ZCfoYnSdoxxOVmB7k8lWpiveHfGyqUdltLY9dL0mc/oAIyIsP3hsI4zPyeDkFEpdhAgZgIBNQRKVL8DMYQ9mTl4wmceywWPGe3MDCgx9yPv9W7/PAH7JhTun/zGBTtikTLr0W6+3IQbzelYso+EhcVg9UMYp8AMrD/f7XzmzY=', 'AAAAAAq8uroAAAAAAAgrvJr1JwYIbVHpEzU/Z4DYrqmKQgwFjBpF5HmgZF1RlzLBSHC7PldC+ZAz0hL9DyiWSktJQxjMh61TrXUGdokjqfm6twwPhBH+sXOWqJPqID/BrHZeXDABJGB8i7NCnV/QZF0rk/U=', datetime.datetime(2025, 8, 28, 10, 38, 24), datetime.datetime(2025, 8, 28, 10, 37, 31), datetime.datetime(2025, 8, 28, 10, 42, 11), 0, '', 2, '')
+
+[2025-08-28 13:34:31,539] [database.py] [line:245] [INFO] # app `stock-rubik-cube`.contract_new数据：
+(219695, '20250828103717410869', 3338203510512787459, '', 1, 'termination', 0, None, '', '', '', '', None, datetime.datetime(2025, 8, 28, 13, 32, 31), datetime.datetime(2025, 8, 28, 13, 32, 31), 0, '', 2, '')
+
+[2025-08-28 13:34:31,557] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+((3338203510512787459,),)
+
+[2025-08-28 13:34:31,557] [database.py] [line:259] [INFO] # app用户id：3338203510512787459
+
+[2025-08-28 13:34:31,612] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-08-28 13:34:31,687] [database.py] [line:308] [INFO] # o1ELc6LrAZOqCjYiOZur5A-sVzYc用户到期时间：(datetime.datetime(2025, 9, 4, 10, 17, 12),)
+[2025-08-28 13:34:31,710] [database.py] [line:322] [INFO] # 更新work_crm_base_user表u_expire_date成功！
