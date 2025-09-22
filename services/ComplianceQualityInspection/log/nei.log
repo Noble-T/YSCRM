@@ -1,0 +1,68 @@
+2025-09-19 11:19:52,892 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://172.19.109.60:3001
+2025-09-19 11:19:52,893 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-19 13:11:03,725 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://172.19.109.60:3001
+2025-09-19 13:11:03,725 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-19 13:11:05,557 - INFO - 127.0.0.1 - - [19/Sep/2025 13:11:05] "GET / HTTP/1.1" 200 -
+2025-09-19 13:11:06,073 - INFO - 127.0.0.1 - - [19/Sep/2025 13:11:06] "GET / HTTP/1.1" 200 -
+2025-09-19 13:11:06,410 - INFO - 127.0.0.1 - - [19/Sep/2025 13:11:06] "GET / HTTP/1.1" 200 -
+2025-09-19 13:11:17,262 - INFO - 127.0.0.1 - - [19/Sep/2025 13:11:17] "POST /process-orders HTTP/1.1" 200 -
+2025-09-19 13:11:17,766 - INFO - 127.0.0.1 - - [19/Sep/2025 13:11:17] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:11:17,973 - INFO - 订单 20250919125152113826 数据上传成功
+2025-09-19 13:11:18,274 - INFO - 127.0.0.1 - - [19/Sep/2025 13:11:18] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:13:37,453 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://172.19.109.60:3001
+2025-09-19 13:13:37,454 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-19 13:13:50,352 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://172.19.109.60:3000
+2025-09-19 13:13:50,352 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-19 13:22:50,541 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:50] "GET / HTTP/1.1" 200 -
+2025-09-19 13:22:50,639 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-19 13:22:52,305 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:52] "POST /process-orders HTTP/1.1" 200 -
+2025-09-19 13:22:52,810 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:52] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:53,319 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:53] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:53,809 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:53] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:54,309 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:54] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:54,824 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:54] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:55,324 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:55] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:55,820 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:55] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:56,323 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:56] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:56,810 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:56] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:57,310 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:57] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:57,823 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:57] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:58,323 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:58] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:58,824 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:58] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:59,323 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:59] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:22:59,830 - INFO - 127.0.0.1 - - [19/Sep/2025 13:22:59] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:00,320 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:00] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:00,823 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:00] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:01,322 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:01] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:01,824 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:01] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:02,323 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:02] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:02,822 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:02] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:03,324 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:03] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:03,810 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:03] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:04,309 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:04] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:04,809 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:04] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:05,310 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:05] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:05,810 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:05] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:06,310 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:06] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:06,819 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:06] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:07,310 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:07] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:07,823 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:07] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:08,322 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:08] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 13:23:08,698 - INFO - 订单 20250918223732751771 数据上传成功
+2025-09-19 13:23:08,823 - INFO - 127.0.0.1 - - [19/Sep/2025 13:23:08] "GET /get-progress HTTP/1.1" 200 -
+2025-09-19 14:52:43,297 - INFO - 223.167.134.224 - - [19/Sep/2025 14:52:43] "GET / HTTP/1.1" 200 -
+2025-09-19 14:52:51,983 - INFO - 223.167.134.224 - - [19/Sep/2025 14:52:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-22 08:55:35,070 - INFO - 223.167.134.224 - - [22/Sep/2025 08:55:35] "GET / HTTP/1.1" 200 -
+2025-09-22 08:55:38,309 - INFO - 223.167.134.224 - - [22/Sep/2025 08:55:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

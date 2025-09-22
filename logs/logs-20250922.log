@@ -1,0 +1,197 @@
+[2025-09-22 10:27:40,741] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2025-09-22 10:27:44,075] [database.py] [line:80] [INFO] # 退款订单id列表：['20250919102445748231', '20250919112218390522', '20250919135132014164', '20250919135305862761', '20250919135435699425', '20250919135449940270']
+[2025-09-22 10:27:44,075] [database.py] [line:85] [INFO] # 
+退款订单号：20250919102445748231
+[2025-09-22 10:27:44,097] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:27:44,137] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49597, '20250919102445748231', 10100, 1, 1, 1, 1, '1758250738', '4200002873202509197302408825', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 1, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 19, 10, 24, 45), datetime.datetime(2025, 9, 19, 10, 24, 45)),)
+
+[2025-09-22 10:27:44,160] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+((15201, '20250919102445748231', 'SOD20250919102708917480', 1, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160431', '1001041604310201', datetime.datetime(2025, 9, 19, 10, 27, 8)), (15202, '20250919102445748231', 'SOD20250919102712757838', 1, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160431', '1001041604310201', datetime.datetime(2025, 9, 19, 10, 27, 12)), (15203, '20250919102445748231', 'SOD20250919103100109938', 1, 1, 1, '1758250738', '4200002873202509197302408825', None, '50302504662025091977194786531', '20250919105927438428', datetime.datetime(2025, 9, 19, 10, 59, 28), None, None, None, None, None, None, None, None, datetime.datetime(2025, 9, 19, 10, 31)), (15204, '20250919102445748231', 'SOD20250919104921377528', 2, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160431', '1001041604310201', datetime.datetime(2025, 9, 19, 10, 49, 21)), (15205, '20250919102445748231', 'SOD20250919105346934187', 3, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160431', '1001041604310201', datetime.datetime(2025, 9, 19, 10, 53, 46)), (15206, '20250919102445748231', 'SOD20250919105423089058', 4, 0, 4, None, '2025091910550738885904', None, None, None, None, None, None, None, None, 'TL20250919105507172223', '20250919', None, None, datetime.datetime(2025, 9, 19, 10, 54, 23)), (15207, '20250919102445748231', 'SOD20250919105535651852', 5, 0, 4, None, '2025091910553537964604', None, None, None, None, None, None, None, None, 'TL20250919105535653411', '20250919', None, None, datetime.datetime(2025, 9, 19, 10, 55, 35)), (15208, '20250919102445748231', 'SOD20250919105617145600', 6, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160432', '1001041604320201', datetime.datetime(2025, 9, 19, 10, 56, 17)), (15209, '20250919102445748231', 'SOD20250919105707244794', 9, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160432', '1001041604320201', datetime.datetime(2025, 9, 19, 10, 57, 7)), (15210, '20250919102445748231', 'SOD20250919105745827312', 10, 0, 6, None, None, None, None, None, None, None, None, None, None, None, None, '100104160431', '1001041604310201', datetime.datetime(2025, 9, 19, 10, 57, 45)))
+
+[2025-09-22 10:27:44,183] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49756, '20250919102445748231', 0, 0, 2, 0, None, 1, 4, 888996, 888996, 'wwec9bda2817108582', '百灵智投', 'LiYongLei', 'LiYongLei', 1, 1, 1, '研选量投', 1, 'yxlt', '这是研选量投的描述', 1, 3, 0, '', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 1, 1, '1758250738', 1, 7, '', '', 0, datetime.datetime(2025, 9, 19, 10, 24, 45), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:27:44,205] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:27:44,227] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:27:44,270] [database.py] [line:157] [INFO] # 退款id：1358
+[2025-09-22 10:27:44,727] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:27:44,764] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:27:44,788] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:27:44,809] [database.py] [line:85] [INFO] # 
+退款订单号：20250919112218390522
+[2025-09-22 10:27:44,830] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:27:44,853] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49598, '20250919112218390522', 10100, 1, 1, 1, 1, '1758252155', '4200002809202509198740942594', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 1, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 19, 11, 22, 18), datetime.datetime(2025, 9, 19, 11, 22, 18)),)
+
+[2025-09-22 10:27:44,875] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+((15211, '20250919112218390522', 'SOD20250919112221025946', 1, 1, 1, '1758252155', '4200002809202509198740942594', None, '50303404672025091931417996907', '20250919112451541354', datetime.datetime(2025, 9, 19, 11, 24, 52), None, None, None, None, None, None, None, None, datetime.datetime(2025, 9, 19, 11, 22, 21)),)
+
+[2025-09-22 10:27:44,897] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49757, '20250919112218390522', 0, 0, 2, 0, None, 3, 0, 888996, 888996, 'wwec9bda2817108582', '百灵智投', 'LiYongLei', 'LiYongLei', 1, 1, 1, '研选量投', 1, 'yxlt', '这是研选量投的描述', 1, 3, 0, '', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 1, 1, '1758252155', 1, 7, '', '', 0, datetime.datetime(2025, 9, 19, 11, 22, 18), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:27:44,918] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:27:44,941] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:27:44,983] [database.py] [line:157] [INFO] # 退款id：1359
+[2025-09-22 10:27:45,387] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:27:45,407] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:27:45,426] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:27:45,446] [database.py] [line:85] [INFO] # 
+退款订单号：20250919135132014164
+[2025-09-22 10:27:45,467] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:27:45,489] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49601, '20250919135132014164', 10124, 3, 3, 0, 0, None, '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 365, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 19, 13, 51, 32), datetime.datetime(2025, 9, 19, 13, 51, 32)),)
+
+[2025-09-22 10:27:45,511] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-09-22 10:27:45,533] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49760, '20250919135132014164', 0, 0, 2, 0, None, 3, 0, 889009, 889009, 'wwec9bda2817108582', '百灵智投', 'cheng', 'cheng', 1, 2, 0, '趋势智投-黄金版', 3, 'qszt-1', '这是趋势智投-黄金版的描述', 365, 5, 0, '20250919112218390522', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 3, 3, None, 0, 7, '', '', 0, datetime.datetime(2025, 9, 19, 13, 51, 32), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:27:45,554] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:27:45,578] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:27:46,005] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:27:46,024] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:27:46,044] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:27:46,063] [database.py] [line:85] [INFO] # 
+退款订单号：20250919135305862761
+[2025-09-22 10:27:46,085] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:27:46,107] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49602, '20250919135305862761', 10147, 5, 5, 0, 0, None, '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 183, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 19, 13, 53, 5), datetime.datetime(2025, 9, 19, 13, 53, 5)),)
+
+[2025-09-22 10:27:46,129] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-09-22 10:27:46,151] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49761, '20250919135305862761', 0, 0, 2, 0, None, 3, 0, 889009, 889009, 'wwec9bda2817108582', '百灵智投', 'cheng', 'cheng', 1, 2, 0, '趋势智投-黄金版', 5, 'qszt-1', '这是趋势智投-黄金版的描述', 183, 5, 0, '20250919112218390522', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 5, 5, None, 0, 7, '', '', 0, datetime.datetime(2025, 9, 19, 13, 53, 5), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:27:46,177] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:27:46,199] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:27:46,618] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:27:46,637] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:27:46,657] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:27:46,678] [database.py] [line:85] [INFO] # 
+退款订单号：20250919135435699425
+[2025-09-22 10:27:46,700] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:27:46,722] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49603, '20250919135435699425', 10168, 4, 4, 0, 0, None, '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 7, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 19, 13, 54, 35), datetime.datetime(2025, 9, 19, 13, 54, 35)),)
+
+[2025-09-22 10:27:46,745] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-09-22 10:27:46,767] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49762, '20250919135435699425', 0, 0, 2, 0, None, 3, 0, 889009, 889009, 'wwec9bda2817108582', '百灵智投', 'cheng', 'cheng', 1, 2, 0, '趋势智投', 4, 'qszt-4-2', '这是趋势智投-四合一的描述', 7, 11, 0, '20250919112218390522', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 4, 4, None, 0, 7, '', '', 0, datetime.datetime(2025, 9, 19, 13, 54, 35), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:27:46,789] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:27:46,811] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:27:47,238] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:27:47,257] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:27:47,278] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:27:47,299] [database.py] [line:85] [INFO] # 
+退款订单号：20250919135449940270
+[2025-09-22 10:27:47,320] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:27:47,343] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49604, '20250919135449940270', 10169, 5, 5, 0, 0, None, '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 274, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 19, 13, 54, 49), datetime.datetime(2025, 9, 19, 13, 54, 49)),)
+
+[2025-09-22 10:27:47,364] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-09-22 10:27:47,387] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49763, '20250919135449940270', 0, 0, 2, 0, None, 3, 0, 889009, 889009, 'wwec9bda2817108582', '百灵智投', 'cheng', 'cheng', 1, 2, 0, '趋势智投', 5, 'qszt-4-2', '这是趋势智投-四合一的描述', 274, 11, 0, '20250919112218390522', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 5, 5, None, 0, 7, '', '', 0, datetime.datetime(2025, 9, 19, 13, 54, 49), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:27:47,408] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:27:47,430] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:27:47,852] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:27:47,872] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:27:47,892] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:27:47,963] [database.py] [line:308] [INFO] # o1ELc6LrAZOqCjYiOZur5A-sVzYc用户到期时间：None
+[2025-09-22 10:29:57,298] [log.py] [line:31] [INFO] # ======Start printing logs======
+[2025-09-22 10:30:00,612] [database.py] [line:80] [INFO] # 退款订单id列表：['20250922102929097346']
+[2025-09-22 10:30:00,612] [database.py] [line:85] [INFO] # 
+退款订单号：20250922102929097346
+[2025-09-22 10:30:00,637] [database.py] [line:97] [INFO] # 退款订单unionid：o1ELc6LrAZOqCjYiOZur5A-sVzYc，kill_order：
+[2025-09-22 10:30:00,678] [database.py] [line:107] [INFO] # v2_work_crm_order_main 数据列表：
+((49606, '20250922102929097346', 10100, 1, 1, 0, 0, None, '', 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', '赵楠', 'H4qNWOvOwe$$$$A$$$$rqaPhQyIw==', None, None, 1, 0, None, None, None, None, 0, datetime.datetime(2025, 9, 22, 10, 29, 29), datetime.datetime(2025, 9, 22, 10, 29, 29)),)
+
+[2025-09-22 10:30:00,704] [database.py] [line:114] [INFO] # v2_work_crm_order_main_son 数据列表：
+()
+
+[2025-09-22 10:30:00,747] [database.py] [line:121] [INFO] # v2_work_crm_order_main_status 数据列表：
+((49765, '20250922102929097346', 0, 0, 2, 0, None, 3, 0, 888996, 888996, 'wwec9bda2817108582', '百灵智投', 'LiYongLei', 'LiYongLei', 1, 1, 0, '研选量投', 1, 'yxlt', '这是研选量投的描述', 1, 3, 0, '', '', 0, 0, 'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 1, 1, None, 0, 7, '', '', 0, datetime.datetime(2025, 9, 22, 10, 29, 29), None, None, 0, '888996,889017', None, None, None, '889009', None, None, None, '889003,889089,889095', None, None, None),)
+
+[2025-09-22 10:30:00,771] [database.py] [line:127] [INFO] # v2_work_crm_hegui 数据列表：
+()
+
+[2025-09-22 10:30:00,796] [database.py] [line:133] [INFO] # v2_work_crm_order_contract 数据列表：
+()
+
+[2025-09-22 10:30:01,277] [database.py] [line:241] [INFO] # app `stock-rubik-cube`.contract_new数据列表：
+()
+
+[2025-09-22 10:30:01,302] [database.py] [line:252] [INFO] # app `stock-rubik-cube`.`order`数据列表：
+()
+
+[2025-09-22 10:30:01,324] [database.py] [line:287] [INFO] # app `stock-rubik-cube`.user_order_product数据列表：
+()
+
+[2025-09-22 10:30:01,392] [database.py] [line:308] [INFO] # o1ELc6LrAZOqCjYiOZur5A-sVzYc用户到期时间：None
