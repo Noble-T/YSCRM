@@ -1,21 +1,21 @@
 unionid: o1ELc6LrAZOqCjYiOZur5A-sVzYc
 #unionid: oAESl0aF5qnVf6e1G7I15_QKaf8U
-order_id: '20250903192207675301'
+order_id: '20251126175948199019,20251126184350908869'
 product: 趋势智投-铂金版
 refund_contract: 服务终止协议-测试
 
 mysql:
   host: ysjumpserver.abctougu.com
   port: 33061
-  user: 91605338-8d37-4ce7-afd4-17bed1154498
+  bhuser: 91605338-8d37-4ce7-afd4-17bed1154498
   password: IeXEUXeAdz5Fo24a
   database: crm.abctougu.cn
 
-  user_sim: 75cb4deb-a3bf-4b01-a901-9455947a62c5
-  password_sim: p2QcFmuXlM1Z3SFj
+  user_sim: b1e036bc-5c98-4215-896a-b817af6c6eba
+  password_sim: md5VLlklJTN63UC0
 
-  user_app: 24016c4c-31ab-41e2-8006-4b67bbde6a09
-  password_app: sakVlJi4dTqLsOmi
+  user_app: c3986cad-d744-49cb-a59c-06a0888b0bec
+  password_app: UT3JS2G1v10cVP9T
   database_app: stock-rubik-cube
 crm:
   #  url: https://crm.abctougu.cn

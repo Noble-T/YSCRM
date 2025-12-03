@@ -90,7 +90,7 @@ import matplotlib.colors as mcolors
 import random
 # excel_filename # Excel文件名
 # excel_filename="/Users/apple/PycharmProjects/py_locust/abc_crm_app_apiweb/ApiFast/read_execl_report/task77.csv"
-excel_filename=r'D:/亚商\00-测试报告\【CRM-开发组】任务信息表_20250905.csv'
+excel_filename=r'D:/亚商\00-测试报告\【CRM-开发组】任务信息表_20251113.csv'
 version="1.0.0"
 # 读取CSV文件
 df = pd.read_csv(excel_filename,encoding='utf-8')  # 替换'your_file.csv'为你的CSV文件路径

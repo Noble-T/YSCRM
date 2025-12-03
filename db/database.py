@@ -324,7 +324,7 @@ def database():
             # 删除黑名单
             # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
             delete_blacklist = ("DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
-                                'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
+                                'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
                                 'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
             cursor.execute(delete_blacklist)
             # 提交事务
