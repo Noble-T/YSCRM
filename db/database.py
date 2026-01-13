@@ -24,12 +24,14 @@ from utils.log import logger
 def database():
     try:
         yaml = YAML()
-        with open('../conf/config.yaml', 'r', encoding='utf-8') as file:
+        with open('../conf/config.yaml', 'r', encoding='utf-8') as f:
             # 使用yaml.safe_load()函数读取YAML文件内容
-            config_data = yaml.load(file)
+            config_data = yaml.load(f)
             # 使用 json.dumps 来美化输出 JSON 数据，ensure_ascii=False 参数来正确显示中文字符
             pretty_json = json.dumps(config_data, indent=4, ensure_ascii=False)
             print("{}\n".format(pretty_json))
+            blacklists = config_data.get('blacklist', [])
+            print("黑名单列表：{}".format(blacklists))
 
             # 测试环境
             # db = pymysql.connect(host=config_data['mysql']['host'], port=config_data['mysql']['port'], user=config_data['mysql']['user'],
@@ -233,23 +235,24 @@ def database():
 
 
                     # app
-                    # 查询合同并执行
-                    query_contract = "SELECT * FROM `stock-rubik-cube`.contract_new WHERE order_id = %s;"
-                    cursor_app.execute(query_contract, order_value)
-                    # 获取所有结果
-                    results = cursor_app.fetchall()
-                    logger.info("app `stock-rubik-cube`.contract_new数据列表：\n{}\n".format(results))
-                    if len(results) != 0:
-                        for result in results:
-                            if result != '':
-                                logger.info("app `stock-rubik-cube`.contract_new数据：\n{}\n".format(result))
+                    logger.info(f"app订单号：{order_value}")
+                    # # 查询合同并执行
+                    # query_contract = "SELECT * FROM `stock-rubik-cube`.contract_new WHERE order_id = %s;"
+                    # cursor_app.execute(query_contract, order_value)
+                    # # 获取所有结果
+                    # results = cursor_app.fetchall()
+                    # logger.info("app `stock-rubik-cube`.contract_new数据列表：\n{}\n".format(results))
+                    # if len(results) != 0:
+                    #     for result in results:
+                    #         if result != '':
+                    #             logger.info("app `stock-rubik-cube`.contract_new数据：\n{}\n".format(result))
 
-                    # 系统用户表
-                    order_sql = "select o.user_id from `stock-rubik-cube`.`order` o where o.order_id = %s;"
+                    # 订单表
+                    order_sql = "select o.user_id from `stock-rubik-cube`.app_order o where o.order_id = %s;"
                     cursor_app.execute(order_sql, order_value)
                     # 获取所有结果
                     order_results = cursor_app.fetchall()
-                    logger.info("app `stock-rubik-cube`.`order`数据列表：\n{}\n".format(order_results))
+                    logger.info("app `stock-rubik-cube`.app_order数据列表：\n{}\n".format(order_results))
 
                     # 获取sql结果第三个参数
                     for order_result in order_results:
@@ -257,11 +260,11 @@ def database():
                             # logger.info("app订单数据：\n{}\n".format(order_result))
                             user_id = order_result[0]
                             logger.info(f"app用户id：{user_id}\n")
-                            # 删除合同
-                            delete_contract = "DELETE FROM `stock-rubik-cube`.contract_new WHERE user_id = %s and order_id = %s;"
-                            cursor_app.execute(delete_contract, (user_id, order_value))
+                            # # 删除合同
+                            # delete_contract = "DELETE FROM `stock-rubik-cube`.contract_new WHERE order_id = %s;"
+                            # cursor_app.execute(delete_contract, (order_value))
                             # 删除订单
-                            delete_order = "DELETE FROM `stock-rubik-cube`.`order` WHERE user_id = %s and order_id = %s;"
+                            delete_order = "DELETE FROM `stock-rubik-cube`.app_order WHERE user_id = %s and order_id = %s;"
                             cursor_app.execute(delete_order, (user_id, order_value))
 
                     # user_id_sql = "select o.user_id from `stock-rubik-cube`.`order` o where o.order_id = %s;"
@@ -289,6 +292,21 @@ def database():
                     # 删除用户订单表
                     delete_user_order = "DELETE FROM `stock-rubik-cube`.user_order_product WHERE order_id = %s;"
                     cursor_app.execute(delete_user_order, order_value)
+
+            # 删除app黑名单
+            # # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
+            # delete_blacklist = ("DELETE FROM `stock-rubik-cube`.blacklist WHERE info IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
+            #                     'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
+            #                     'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
+            # cursor_app.execute(delete_blacklist)
+
+            # 2. 构造带有正确数量占位符的 SQL 语句
+            # 如果 id_list 有 3 个元素，生成: DELETE FROM users WHERE id IN (%s, %s, %s)
+            placeholders = ', '.join(['%s'] * len(blacklists))
+            sql = f"DELETE FROM `stock-rubik-cube`.blacklist WHERE info IN ({placeholders})"
+            cursor_app.execute(sql, blacklists)
+            logger.info("删除app黑名单成功")
+
             # app
             # 提交事务
             db_app.commit()
@@ -321,14 +339,21 @@ def database():
                     cursor.execute(update_user_expire_date, (result_unionid, result_unionid))
                     logger.info("更新work_crm_base_user表u_expire_date成功！")
 
-            # 删除黑名单
-            # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
-            delete_blacklist = ("DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
-                                'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
-                                'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
-            cursor.execute(delete_blacklist)
-            # 提交事务
+            # 删除crm黑名单
+            # # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
+            # delete_blacklist = ("DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
+            #                     'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
+            #                     'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
+            # cursor.execute(delete_blacklist)
 
+            # 2. 构造带有正确数量占位符的 SQL 语句
+            # 如果 id_list 有 3 个元素，生成: DELETE FROM users WHERE id IN (%s, %s, %s)
+            placeholders = ', '.join(['%s'] * len(blacklists))
+            sql = f"DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ({placeholders})"
+            cursor.execute(sql, blacklists)
+            logger.info("删除crm黑名单成功！")
+
+            # 提交事务
             db.commit()
             # 关闭游标和连接
             cursor.close()
@@ -336,8 +361,8 @@ def database():
 
         #     # 将order_id新值写入config.yaml文件
         #     config_data['order_id'] = '00000000001,'
-        # with open('config.yaml', 'w', encoding='utf-8') as file:
-        #     yaml.dump(config_data, file)  # 将Python中的字典或者列表转化为yaml格式的数据
+        # with open('config.yaml', 'w', encoding='utf-8') as f:
+        #     yaml.dump(config_data, f)  # 将Python中的字典或者列表转化为yaml格式的数据
 
     except Exception as e:
         logger.error(f"数据库操作时发生错误: {e}")

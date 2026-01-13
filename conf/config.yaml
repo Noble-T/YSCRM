@@ -1,8 +1,20 @@
 unionid: o1ELc6LrAZOqCjYiOZur5A-sVzYc
 #unionid: oAESl0aF5qnVf6e1G7I15_QKaf8U
-order_id: '20251126175948199019,20251126184350908869'
+order_id: '20251219154324110285'
 product: 趋势智投-铂金版
 refund_contract: 服务终止协议-测试
+# 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
+blacklist:
+  - "owAkH6pzIm8b-ToOmC0cz7p2IomI"
+  - "o1ELc6LrAZOqCjYiOZur5A-sVzYc"
+  - "owAkH6hLuQM8nATHzmdM8n-qigCg"
+  - "o1ELc6C-o91OlKbgUIPaGGMgS858"
+  - "oAESl0QRB8mndRVJFs69e5o8JZi0"
+  - "13325171563"
+  - "320324199504180352"
+  - "oAESl0aF5qnVf6e1G7I15_QKaf8U"
+  - "18302954019"
+  - "610121199302072600"
 
 mysql:
   host: ysjumpserver.abctougu.com
@@ -11,11 +23,11 @@ mysql:
   password: IeXEUXeAdz5Fo24a
   database: crm.abctougu.cn
 
-  user_sim: b1e036bc-5c98-4215-896a-b817af6c6eba
-  password_sim: md5VLlklJTN63UC0
+  user_sim: a45258d0-7c4f-4fbc-8993-4b9aaba75ac2
+  password_sim: m4TIv93NrmWrTzAP
 
-  user_app: c3986cad-d744-49cb-a59c-06a0888b0bec
-  password_app: UT3JS2G1v10cVP9T
+  user_app: fc315c68-8acc-4888-a725-ba8d15fe8283
+  password_app: 3YKOatnNVHKx3UX4
   database_app: stock-rubik-cube
 crm:
   #  url: https://crm.abctougu.cn
