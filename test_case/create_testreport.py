@@ -1,3 +1,6 @@
+"""
+钉钉导出任务字段-自定义：迭代、任务ID、任务类型、标题、优先级、执行者、任务状态、逾期天数、缺陷分类、需求分类
+"""
 # import pandas as pd
 # import matplotlib.pyplot as plt
 # import seaborn as sns

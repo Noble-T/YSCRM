@@ -77,14 +77,15 @@ def database():
                 order_values = [order_value[0] for order_value in order_values]
             else:
                 # 根据order_id查询订单
-                order_values = config_data['order_id'].split(',')
+                # order_values = config_data['order_id'].split(',')
+                order_values = config_data.get('order_id', [])
             # print("\n{}".format(order_values))
-            logger.info(f"退款订单id列表：{order_values}")
+            logger.info(f"删除订单id列表：{order_values}")
             for order_value in order_values:
                 if order_value != '':
                     last_order_value = order_value
                     # print("\n{}".format(order_value))
-                    logger.info(f"\n退款订单号：{order_value}")
+                    logger.info(f"删除订单号：{order_value}")
 
                     # 查询unionid并执行
                     query_unionid = "SELECT spare_unionid,kill_order FROM `crm.abctougu.cn`.v2_work_crm_order_main_status WHERE order_id = %s;"
@@ -96,7 +97,7 @@ def database():
                         # 将查询结果存储在变量中
                         result_unionid = result[0]
                         result_kill_order = result[1]
-                        logger.info(f"退款订单unionid：{result_unionid}，kill_order：{result_kill_order}")
+                        logger.info(f"删除订单unionid：{result_unionid}，kill_order：{result_kill_order}")
 
                     # 查询主订单并执行
                     query_order = "SELECT * FROM `crm.abctougu.cn`.v2_work_crm_order_main WHERE order_id = %s;"
@@ -248,24 +249,15 @@ def database():
                     #             logger.info("app `stock-rubik-cube`.contract_new数据：\n{}\n".format(result))
 
                     # 订单表
-                    order_sql = "select o.user_id from `stock-rubik-cube`.app_order o where o.order_id = %s;"
+                    order_sql = "select o.* from `stock-rubik-cube`.app_order o where o.order_id = %s;"
                     cursor_app.execute(order_sql, order_value)
                     # 获取所有结果
                     order_results = cursor_app.fetchall()
                     logger.info("app `stock-rubik-cube`.app_order数据列表：\n{}\n".format(order_results))
 
-                    # 获取sql结果第三个参数
-                    for order_result in order_results:
-                        if order_result != '':
-                            # logger.info("app订单数据：\n{}\n".format(order_result))
-                            user_id = order_result[0]
-                            logger.info(f"app用户id：{user_id}\n")
-                            # # 删除合同
-                            # delete_contract = "DELETE FROM `stock-rubik-cube`.contract_new WHERE order_id = %s;"
-                            # cursor_app.execute(delete_contract, (order_value))
-                            # 删除订单
-                            delete_order = "DELETE FROM `stock-rubik-cube`.app_order WHERE user_id = %s and order_id = %s;"
-                            cursor_app.execute(delete_order, (user_id, order_value))
+                    # 删除订单
+                    delete_order = "DELETE FROM `stock-rubik-cube`.app_order WHERE order_id = %s;"
+                    cursor_app.execute(delete_order, order_value)
 
                     # user_id_sql = "select o.user_id from `stock-rubik-cube`.`order` o where o.order_id = %s;"
                     # cursor_app.execute(user_id_sql, order_value)
@@ -293,19 +285,19 @@ def database():
                     delete_user_order = "DELETE FROM `stock-rubik-cube`.user_order_product WHERE order_id = %s;"
                     cursor_app.execute(delete_user_order, order_value)
 
-            # 删除app黑名单
-            # # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
-            # delete_blacklist = ("DELETE FROM `stock-rubik-cube`.blacklist WHERE info IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
-            #                     'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
-            #                     'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
-            # cursor_app.execute(delete_blacklist)
-
-            # 2. 构造带有正确数量占位符的 SQL 语句
-            # 如果 id_list 有 3 个元素，生成: DELETE FROM users WHERE id IN (%s, %s, %s)
-            placeholders = ', '.join(['%s'] * len(blacklists))
-            sql = f"DELETE FROM `stock-rubik-cube`.blacklist WHERE info IN ({placeholders})"
-            cursor_app.execute(sql, blacklists)
-            logger.info("删除app黑名单成功")
+            # # 删除app黑名单
+            # # # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
+            # # delete_blacklist = ("DELETE FROM `stock-rubik-cube`.blacklist WHERE info IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
+            # #                     'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
+            # #                     'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
+            # # cursor_app.execute(delete_blacklist)
+            #
+            # # 2. 构造带有正确数量占位符的 SQL 语句
+            # # 如果 id_list 有 3 个元素，生成: DELETE FROM users WHERE id IN (%s, %s, %s)
+            # placeholders = ', '.join(['%s'] * len(blacklists))
+            # sql = f"DELETE FROM `stock-rubik-cube`.blacklist WHERE info IN ({placeholders})"
+            # cursor_app.execute(sql, blacklists)
+            # logger.info("删除app黑名单成功")
 
             # app
             # 提交事务
@@ -339,19 +331,19 @@ def database():
                     cursor.execute(update_user_expire_date, (result_unionid, result_unionid))
                     logger.info("更新work_crm_base_user表u_expire_date成功！")
 
-            # 删除crm黑名单
-            # # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
-            # delete_blacklist = ("DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
-            #                     'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
-            #                     'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
-            # cursor.execute(delete_blacklist)
-
-            # 2. 构造带有正确数量占位符的 SQL 语句
-            # 如果 id_list 有 3 个元素，生成: DELETE FROM users WHERE id IN (%s, %s, %s)
-            placeholders = ', '.join(['%s'] * len(blacklists))
-            sql = f"DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ({placeholders})"
-            cursor.execute(sql, blacklists)
-            logger.info("删除crm黑名单成功！")
+            # # 删除crm黑名单
+            # # # 生产：owAkH6pzIm8b-ToOmC0cz7p2IomI，仿真：o1ELc6LrAZOqCjYiOZur5A-sVzYc
+            # # delete_blacklist = ("DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ('owAkH6pzIm8b-ToOmC0cz7p2IomI', \
+            # #                     'o1ELc6LrAZOqCjYiOZur5A-sVzYc', 'owAkH6hLuQM8nATHzmdM8n-qigCg', 'o1ELc6C-o91OlKbgUIPaGGMgS858', 'oAESl0QRB8mndRVJFs69e5o8JZi0', '13325171563', '320324199504180352', \
+            # #                     'oAESl0aF5qnVf6e1G7I15_QKaf8U', '18302954019', '610121199302072600');")
+            # # cursor.execute(delete_blacklist)
+            #
+            # # 2. 构造带有正确数量占位符的 SQL 语句
+            # # 如果 id_list 有 3 个元素，生成: DELETE FROM users WHERE id IN (%s, %s, %s)
+            # placeholders = ', '.join(['%s'] * len(blacklists))
+            # sql = f"DELETE FROM `crm.abctougu.cn`.work_crm_blacklist WHERE value IN ({placeholders})"
+            # cursor.execute(sql, blacklists)
+            # logger.info("删除crm黑名单成功！")
 
             # 提交事务
             db.commit()
@@ -367,6 +359,8 @@ def database():
     except Exception as e:
         logger.error(f"数据库操作时发生错误: {e}")
         logger.error(f"Error occurred: {e}", exc_info=True)
+        db.rollback()
+        db.close()
         return None
 
 
