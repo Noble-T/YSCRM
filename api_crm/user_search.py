@@ -22,7 +22,8 @@ COOKIES = {
 }
 # 请求间隔（秒），避免接口频繁调用被封
 REQUEST_INTERVAL = 1
-
+# 请求次数
+REQUEST_COUNT = 22
 
 # =======================
 # 函数模块区
@@ -68,8 +69,6 @@ def main():
     """
     # 初始手机号
     mobile = 13000000001
-    # 请求次数
-    REQUEST_COUNT = 2
     results = []  # 用于存储所有接口返回结果
     for i in range(REQUEST_COUNT):
         print(f"第 {i+1} 次请求, mobile={mobile}")
