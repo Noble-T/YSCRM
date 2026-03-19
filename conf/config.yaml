@@ -10,8 +10,8 @@ blacklist:
   - "owAkH6hLuQM8nATHzmdM8n-qigCg"
   - "o1ELc6C-o91OlKbgUIPaGGMgS858"
   - "oAESl0QRB8mndRVJFs69e5o8JZi0"
-  - "13325171563"
-  - "320324199504180352"
+  - "13000000000"
+  - "511703200107026396"
   - "oAESl0aF5qnVf6e1G7I15_QKaf8U"
   - "18302954019"
   - "610121199302072600"
@@ -39,7 +39,7 @@ crm:
   cookie:
     name: jmftou
     value: 3336e664b39602f170db2797776c35bb
-  name: 赵楠
-  mobile: 13325171563
+  name: 袁文
+  mobile: 13000000000
   url_archives: 
     https://pay.oneil88.com/admin#/crm_v2/hegui.compliance/archives_detail.html?id=14&spm=m-204-243-245
