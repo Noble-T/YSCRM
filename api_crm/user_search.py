@@ -100,7 +100,7 @@ def main():
                 keywords = ["需要登录", "没有访问", "20次"]
                 if any(keyword in result_str for keyword in keywords):
                     print(f"响应结果：{result_str}")
-                    # Python 获取字典中的信息，使用 get() 方法（推荐），更加安全
+                    # Python 获取字典中的信息，使用 get() 方法（推荐），如果键不存在返回 None，更加安全
                     print(f"⚠️  检测到 【{result.get('info')}】，程序退出")
                     break
         else:
