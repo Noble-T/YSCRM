@@ -89,16 +89,21 @@ def main():
 
         # 输出状态码
         if response:
-            print(f"响应状态码：{response.status_code}")
+            print(f"响应状态码：{response.status_code}\n")
 
-            # 检查响应结果是否包含"20 次"，如果包含则退出
+            # 检查响应结果是否包含"没有访问"或"20 次"，如果包含则退出
             if result and isinstance(result, dict): # 尝试判断结果是否为字典
                 result_str = str(result)
-                if "20次" in result_str:
-                    print("⚠️  检测到查询次数限制（20 次），程序退出")
+
+                # if "没有访问" in result_str or "20次" in result_str:
+                # 判断的关键词很多，写很长的 or 会显得代码冗余，推荐使用列表推导式或 any() 函数。使用 any() 函数（推荐），写法更优雅，也更容易扩展维护
+                keywords = ["需要登录", "没有访问", "20次"]
+                if any(keyword in result_str for keyword in keywords):
+                    print(f"响应结果：{result_str}")
+                    print(f"⚠️  检测到 {result.get('info', '')}，程序退出")
                     break
         else:
-            print("请求失败，无状态码")
+            print("请求失败，无状态码\n")
 
         results.append({"i": i+1, "mobile": mobile, "response_code": response.status_code, "response_time": response.elapsed.total_seconds(), "result": result})
         mobile += 1  # mobile自增
